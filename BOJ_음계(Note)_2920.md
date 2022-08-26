@@ -38,6 +38,7 @@ else:
 |:---:|:---:|:---:|
 |3_ch01_01|구현|str/list|
 * 아이디어: 리스트의 앞뒤 원소를 차례대로 비교하며 오름차순/내림차순 여부를 체크.
+***
 ```python
 # 입력값: 1 2 3
 a = input.split()
@@ -55,5 +56,6 @@ print(a)
 a = list(map(int, input.split()))
 print(a)
 # 출력값: [1, 2, 3]
-
 ```
+***
++) Python3 vs PyPy3: PyPy3(메모리 사용 多 but 시간은 단축됨)
