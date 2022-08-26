@@ -58,4 +58,4 @@ print(a)
 # 출력값: [1, 2, 3]
 ```
 ***
-+) Python3 vs PyPy3: PyPy3(메모리 사용 多 but 시간은 단축됨)
+* Python3 vs PyPy3: PyPy3(메모리 사용 多 but 시간은 단축됨)
