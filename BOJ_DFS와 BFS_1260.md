@@ -11,8 +11,8 @@ def dfs(v):                 # 재귀로 구현.
         if not(visited[e]):
             dfs(e)          # DFS를 재귀적으로 수행.
 
-def bfs(v):
-    q = deque([v])
+def bfs(v):                         # 17~20): 탐색을 시작하는 현재 정점을 처리하는 과정.
+    q = deque([v])                  # 21~23): 현재 정점에서 인접한 정점들 중 방문하지 않은 정점들, 즉 다음 정점들은 Queue에 넣는 과정.
     while q:                        # Queue가 빌 때까지 반복적으로 수행
         v = q.popleft()
         if not(visited[v]):
