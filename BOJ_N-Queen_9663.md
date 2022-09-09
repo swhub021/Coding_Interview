@@ -19,7 +19,7 @@ def dfs(x):               # x는 행(행번호).
     else:
         for i in range(n):  # x번째 행에 속하는 모든 열에 
             row[x] = i      # 퀸을 배치시켰다고 가정하고
-            if check(x):    # x행 이전까지의 행들의 퀸 배치를 check()로 고려하여 
+            if check(x):    # x행 이전까지의 행들의 퀸 배치를 check()로 고려하여 배치시킬 수 있다면
                 dfs(x + 1)  # 현재 행에 퀸을 배치시킨 후, 다음 행(x+1)으로 넘어가서 다시 탐색을 수행하도록 함. 
 
 n = int(input())
