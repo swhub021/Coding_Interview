@@ -14,8 +14,8 @@ def check(x):                               # x번째 행에 퀸을 배치시킬
 
 def dfs(x):               # x는 행(행번호).
     global result
-    if x == n:            # n번째 행까지 퀸을 배치할 수 있는 곳이 있을 때        
-        result += 1
+    if x == n:            # 0번째 행(x)부터 시작하여 아래 else문의 과정을 거쳐 n-1행 까지 퀸을 배치시키는 탐색을 진행하고 종료조건인 n에 도달했을 경우     
+        result += 1       # 퀸을 배치하는 경우의 수 하나가 완성된 것이므로 +1.
     else:
         for i in range(n):  # x번째 행에 속하는 모든 열에 
             row[x] = i      # 퀸을 배치시켰다고 가정하고
