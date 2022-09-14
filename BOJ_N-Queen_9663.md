@@ -10,6 +10,7 @@ def check(x):                               # x번째 행에 퀸을 배치시킬
         if abs(row[x] - row[i]) == x - i:   # 대각선 
             return False                    # False를 반환하여 dfs 내에서 해당 위치에 퀸을 배치시킬 수 없음을 알려준다.
     return True                             # 현재 행(x)의 이전 행들(0~x-1)과 비교하여 행, 열, 대각선 모두 겹치지 않는다면, 배치가능한 위치이므로 True를 반환.
+                                            # 0부터 x-1까지 모든 행, 열, 대각선에 대한 탐색을 모두 맞힌 후, True를 반환해야하므로 return True는 for과 같은 선상에 위치해야.
 
 
 def dfs(x):               # x는 행(행번호).
